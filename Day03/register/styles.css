@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+#registration-form {
+    max-width: 500px;
+    margin: 0 auto;
+    
+}
+
+
+#registration-form p {
+    padding: 5px;    
+}
+
+#registration-form > p {
+    border-bottom: 1px solid #b8312d;
+}
+
+
+.center {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+
+[type="text"] {
+    width: 200px;
+    padding: 1px solid #ccc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+[type="email"] {
+    width: 200px;
+    padding: 1px solid #ccc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+[type="password"] {
+    width: 200px;
+    padding: 1px solid #ccc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+[type="number"] {
+    width: 200px;
+    padding: 1px solid #ccc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+[type="date"] {
+    width: 200px;
+    padding: 1px solid #ccc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+[type="submit"]{
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    width: 90px;
+    border-radius: 4px;
+
+}
+
+[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+[type="reset"]{
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    width: 90px;
+    border-radius: 4px;
+
+ }
+
+ [type="reset"]:hover{
+    background-color: #0056b3;
+ }
+
+
+
+
+
+
+label {
+    display: inline-block; width: 120px;
+}
+
+select {
+    width: 80px;   /* 너비 */
+    padding: 8px;   /* 안쪽 여백 */
+    border: 4px solid #3498db;   
+    border-radius: 4px;
+    background-color: white;
+}
+
+select:hover {
+    border-color: #007bff;
+}

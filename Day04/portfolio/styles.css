@@ -1,0 +1,184 @@
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;  
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* display: block; */
+    
+}
+
+a {
+    text-decoration: none;    
+    color: #007bff;
+}
+
+H1 {
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+H2 {
+    font-size: 1.5em;
+}
+
+H3 {
+    font-size: 1.2em;
+}
+
+
+
+header {
+    padding: 20px;
+    border-bottom: 2px solid #333;
+    margin-bottom: 20px;
+    position: sticky; top: 0;
+    background-color: antiquewhite;
+}
+
+header h1 {
+    text-align: center;
+}
+
+
+.content-wrapper {
+    width: 100%;
+}
+
+.project {
+   
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* 테두리가 박스 크기를 키우지 않게 고정 */
+    /* float, width, margin은 이제 필요 없습니다! */
+}
+
+.project2 {
+
+    padding: 15px;
+    border: 1px solid #ccc;
+    /* box-sizing: border-box; */ /* 테두리가 박스 크기를 키우지 않게 고정 */
+    /* float, width, margin은 이제 필요 없습니다! */
+    width: 305%;
+    height: 200px;
+    
+}
+
+
+/* project를 flex 형태로 배치
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+} */
+
+
+#projects {
+    display: grid;
+    /* 한 줄에 3개씩 똑같은 크기로 나눕니다(1:1:1 비율) */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; /* 박스 사이의 간격을 20px로 고정 (수학 계산 필요 없음) */
+    padding: 20px;
+    scroll-margin-top: 196px;
+}
+
+
+#projects h2 {
+        
+    /* 첫 번째 열부터 마지막 열까지 칸을 다 차지해라 (1번선부터 4번선까지) */
+    grid-column: 1 / -1; 
+    margin-bottom: 10px;
+}
+
+
+#about {
+    padding: 20px;
+    scroll-margin-top: 196px;
+}
+
+
+
+section {
+    float: left; 
+    width: 65%;
+    /* margin: 0; */
+    box-sizing: border-box;
+}
+
+
+aside {
+    float: right;
+    width: 20%; /* 25%에서 30%로 조정하여 시각적 균형 */
+    margin: 0;   /* 마진 제거 (충돌 방지) */
+    padding: 30px;
+    border-left: 3px solid #007bff;
+    box-sizing: border-box; /* 너비 계산 고정 */
+}
+
+
+/* aside {
+    padding: 10px;
+    border-left: 3px solid #007bff;
+    margin: 20px;
+    position: relative;
+    float: right;
+    width: 25%;
+} */
+
+
+
+/* aside h3 {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+} */
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    /* float: left; */
+    margin-right: 20px;
+    clear: left;
+}
+
+footer {
+    /* 1. 이전 요소들의 float 영향을 제거하여 하단에 정상 배치 */
+    clear: both;
+    /* position: relative; */
+    /* bottom:0; */
+
+    /* (선택사항) 푸터임을 확실히 보기 위한 스타일 */
+    margin-top: auto;
+    background-color: #f8f8f8;
+    padding: 20px; 
+    text-align: center;
+
+    /* 
+    width: 100%;
+    box-sizing: border-box; */
+
+}
+
+/* 2. footer 안의 p 태그 중 '첫 번째' 것만 골라서 가리기 */
+footer p:first-child {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
